@@ -5134,16 +5134,21 @@ def solution(number):
 			output.append(n.pop(n.index(num)))
 	return sum(output), output
 
-
-print(solution(10))
-
+#print(solution(10))
 
 
+def duplicate_count(text):
+	text = list(text.lower())
+	count = 0
+	ignore = []
+	for char in text:
+		if text.count(char) > 1 and char not in ignore:
+			count += 1
+			ignore.append(char)
+	return count
 
 
-
-
-
+print(duplicate_count('aabbdsa'))
 
 
 
