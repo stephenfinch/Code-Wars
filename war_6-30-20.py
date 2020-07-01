@@ -5116,11 +5116,42 @@ def subtract_sum(number):
 		for num in str(number):
 			temp += int(num)
 		number = number-temp
-	return fruits.get(number), number
+	return fruits.get(number)
+
+#print(subtract_sum(10))
 
 
 
-print(subtract_sum(10))
+def solution(number):
+	n = list(range(1,number))
+	print(n)
+	output = []
+	for num in n:
+		if num % 3 == 0:
+			output.append(n.pop(n.index(num)))
+	for num in n:
+		if num % 5 == 0:
+			output.append(n.pop(n.index(num)))
+	return sum(output), output
+
+
+print(solution(10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
