@@ -5139,8 +5139,7 @@ def solution(number):
 
 def duplicate_count(text):
 	text = list(text.lower())
-	count = 0
-	ignore = []
+	count, ignore = 0, []
 	for char in text:
 		if text.count(char) > 1 and char not in ignore:
 			count += 1
