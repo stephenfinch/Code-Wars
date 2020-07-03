@@ -1,20 +1,16 @@
 def yes_no(arr):
-	new_list = arr[:]
-
-	while len(arr) > 2:
-		pops = []
-		for i in range(1, len(arr), 2):
-			new_list.append(arr[i])
-		for x in range(0, len(arr), 2):
-			pops.append(x)
-		pops.reverse()
-		for a in pops:
-			arr.pop(a)
 	output = []
-	for i in range(0, len(new_list), 2):
-		output.append(new_list[i])
+	new_arr = arr*3
+	i = 0
+	while len(new_arr) > 1:
 
-	return output+[arr[0]]
+		if i % 2 == 0:
+			output.append(new_arr[0])
+			new_arr = [x for x in new_arr if x != output[-1]]
+		else:
+			new_arr = new_arr[1:]
+		i += 1
+	return output+new_arr
 
 
 
@@ -23,4 +19,5 @@ def yes_no(arr):
 print(yes_no(['this', 'code', 'is', 'right', 'the']))
 
 lst = ['this', 'code', 'is', 'right', 'the'] + ['code', 'right'] + ['code']
-print(lst)
+lst1 = ['this', 'code', 'is', 'right', 'the']
+#print(lst1*3)
