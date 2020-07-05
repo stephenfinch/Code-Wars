@@ -14,7 +14,7 @@ def yes_no(arr):
 
 
 
-
+#this is a joke haha
 
 print(yes_no(['this', 'code', 'is', 'right', 'the']))
 
