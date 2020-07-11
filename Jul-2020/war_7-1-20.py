@@ -19,4 +19,4 @@ print(yes_no(['this', 'code', 'is', 'right', 'the']))
 
 lst = ['this', 'code', 'is', 'right', 'the'] + ['code', 'right'] + ['code']
 lst1 = ['this', 'code', 'is', 'right', 'the']
-#print(lst1*3)
+
