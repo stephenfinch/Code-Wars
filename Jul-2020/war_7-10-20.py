@@ -8,4 +8,8 @@ def persistence(n):
 		i += 1
 	return i
 
-print(persistence(39), 3)
+#print(persistence(39), 3)
+
+
+def largest_pair_sum(numbers):
+	return numbers.pop(max(numbers)) + numbers.pop(max(numbers))
