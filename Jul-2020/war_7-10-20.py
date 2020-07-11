@@ -12,4 +12,4 @@ def persistence(n):
 
 
 def largest_pair_sum(numbers):
-	return numbers.pop(max(numbers)) + numbers.pop(max(numbers))
+	return numbers.pop(numbers.index(max(numbers))) + max(numbers)
