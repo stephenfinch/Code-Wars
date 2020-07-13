@@ -13,3 +13,5 @@ print(persistence(39), 3)
 
 def largest_pair_sum(numbers):
 	return numbers.pop(numbers.index(max(numbers))) + max(numbers)
+
+#there are other ways to do this like sorting the list and taking the first two numbers
