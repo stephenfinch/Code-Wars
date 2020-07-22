@@ -1,3 +1,4 @@
+'''
 def solve(arr):
 	i = 0
 	while len(arr) > 1:
@@ -10,6 +11,13 @@ def solve(arr):
 			arr = arr[:-1]
 		i += 1
 	return i
+'''
+import math
+def solve(arr):
+	arr.sort()
+	if sum(arr[:-1]) < arr[-1]:
+		return sum(arr[:-1]), '==============='
+	return math.floor(((arr[-1]+arr[0])+arr[1])/2)
 
 
 print(solve([1,1,1]), 1)
