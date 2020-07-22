@@ -1,34 +1,9 @@
-'''
 def solve(arr):
 	i = 0
+
 	while len(arr) > 1:
-		for num in arr:
-			if num < 1:
-				arr.pop(arr.index(num))
-		if len(arr) > 1:
-			a = arr.index(max(arr))
-			b = arr.index(min(arr[:a]+arr[a:]))
-		else:
-			return i, '============='
-
-		if a == b:
-			return i
-
-		print(arr, a, b)
-
-		arr[a] -= 1
-		arr[b] -= 1
-		
-		i += 1
-		return i
-'''
-def solve(arr):
-	i = 0
-	arr.sort()
-	arr.reverse()
-	#print(arr)
-	while len(arr) > 1:
-
+		arr.sort()
+		arr.reverse()
 
 		arr[0] -= 1
 		arr[-1] -= 1
