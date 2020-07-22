@@ -1,24 +1,34 @@
+'''
 def solve(arr):
 	i = 0
-	while sum(arr) > 1:
-		big, small = 0
+	while len(arr) > 1:
 		for num in arr:
-			if num > big:
-				big = num
-			if small < num:
-				small = num
+			if num < 1:
+				arr.pop(arr.index(num))
+		if len(arr) > 1:
+			a = arr.index(max(arr))
+			b = arr.index(min(arr[:a]+arr[a:]))
+		else:
+			return i, '============='
 
+		if a == b:
+			return i
 
+		print(arr, a, b)
 
-
-		arr[arr.index(min(arr))] -= 1
-		arr[arr.index(max(arr))] -= 1
-		for x in range(len(arr)):
-			if arr[x] < 1:
-				arr.pop(x)
-		print(arr)
+		arr[a] -= 1
+		arr[b] -= 1
+		
 		i += 1
-	return i
+		return i
+'''
+def solve(arr):
+	arr.sort()
+	print(arr)
+	if arr[2]-arr[0] < arr[1]:
+		return arr[2]
+	else:
+		return arr[1]
 
 
 print(solve([1,1,1]), 1)
