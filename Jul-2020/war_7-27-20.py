@@ -1,1 +1,1 @@
-rooms = {{1:' '}, {2:' '}, {3:' '}}
+rooms = {1:{'name': 0, 'description': 0, 'completed': 0}, 2:{'name': 0, 'description': 0, 'completed': 0}, 3:{'name': 0, 'description': 0, 'completed': 0}}
