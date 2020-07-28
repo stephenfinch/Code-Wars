@@ -7,7 +7,6 @@ def consecutive_sum(num):
 				output.append(temp)
 			elif sum(temp) < num:
 				temp.append(i)
-				print(temp)
 			else:
 				break
 	return len(output) + 1
