@@ -12,18 +12,20 @@ def ordered_count(s):
 	return output
 
 def remove_duplicate_ids(table):
-	keys = sorted(list(table.keys()))
+	keys = sorted([int(n) for n in list(table.keys())])
+	keys = [str(n) for n in keys]
 	keys.reverse()
+	print(keys)
 	seen = []
 	for k in keys:
-		temp1, temp2 = set(table.get(k)), []
+		temp1, temp2 = table.get(k), []
 		for i in temp1:
 			if i not in seen:
 				temp2.append(i)
 			seen.append(i)
-		temp2.reverse()
 		table.update({k:temp2})
-	return table
+	keys.reverse()
+	return {x:table.get(x) for x in keys}
 
 
 
@@ -37,4 +39,17 @@ res_b = {
     "2": ["C"],
     "3": ["A", "B", "D"]
 }
+d = {
+    "432": ["A", "A", "B", "D"],
+    "53": ["L", "G", "B", "C"],
+    "236": ["L", "A", "X", "G", "H", "X"],
+    "11": ["P", "R", "S", "D"],
+}
+res_d = {
+    "11": ["P", "R", "S"],
+    "53": ["C"],
+    "236": ["L", "X", "G", "H"],
+    "432": ["A", "B", "D"]
+}
 print(remove_duplicate_ids(b), res_b)
+print(remove_duplicate_ids(d), res_d)
