@@ -4,8 +4,9 @@ def capitalize_word(word):
 	return word.title()
 
 def ordered_count(s):
-	s.sort()
-	output = []
-	for char in set(s):
-		output.append((char,s.count(char)))
+	output, seen = [], []
+	for char in s:
+		if char not in seen:
+			output.append((char, s.count(char)))
+		seen.append(char)
 	return output
