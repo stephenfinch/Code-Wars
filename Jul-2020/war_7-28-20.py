@@ -13,3 +13,7 @@ def consecutive_sum(num):
 
 
 print(consecutive_sum(15), 4)
+
+def solve(arr):
+	a, b = arr[0], arr[1]
+	return max(max(a)*max(b),min(a)*min(b))
