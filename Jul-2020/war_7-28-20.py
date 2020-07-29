@@ -15,5 +15,13 @@ def consecutive_sum(num):
 print(consecutive_sum(15), 4)
 
 def solve(arr):
-	a, b = arr[0], arr[1]
-	return max(max(a)*max(b),min(a)*min(b))
+	a, b = [], []
+	for item in arr:
+		a.append(max(item))
+		b.append(min(item))
+	a.sort()
+	b.sort()
+	return max(a[-1]*a[-2], b[0]*b[1]), a, b
+
+
+print(solve([[14,2],[0,-16],[-12,-16]]),3584)
