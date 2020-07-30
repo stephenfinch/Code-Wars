@@ -21,7 +21,7 @@ def solve(arr):
 		b.append(min(item))
 	a.sort()
 	b.sort()
-	return max(a[-1]*a[-2], b[0]*b[1]), a, b
+	return max(a[-1]*a[-2], b[0]*b[1])
 
 
 print(solve([[14,2],[0,-16],[-12,-16]]),3584)
