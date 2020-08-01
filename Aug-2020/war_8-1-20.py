@@ -1,3 +1,4 @@
+'''
 def solve(s):
 	spaces = []
 	for i in range(len(s)):
@@ -12,3 +13,12 @@ def solve(s):
 
 
 print(solve("i love codewars"),"s rawe docevoli")
+'''
+
+
+def solve(s,a,b):
+	return s[:a] + s[a:b+1][::-1] + s[b+1:]
+
+
+print(solve("codewars",1,5),"cawedors")
+print(solve("codingIsFun",2,100),"conuFsIgnid")
