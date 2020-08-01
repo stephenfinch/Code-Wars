@@ -6,9 +6,8 @@ def solve(s):
 	s = s.replace(' ', '')
 	s = list(s)
 	s.reverse()
-	for a in spaces:
-		print(a)
-		s.insert(' ', a)
+	for space in spaces:
+		s.insert(space, ' ')
 	return ''.join(s)
 
 
