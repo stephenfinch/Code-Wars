@@ -22,3 +22,7 @@ def solve(s,a,b):
 
 print(solve("codewars",1,5),"cawedors")
 print(solve("codingIsFun",2,100),"conuFsIgnid")
+
+from itertools import product 
+def solve(arr):
+	return max(product(arr[0], arr[1]))
