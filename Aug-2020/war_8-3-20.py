@@ -11,3 +11,6 @@ def solve(arr):
 
 
 print(solve([[14,2],[0,-16],[-12,-16]]),3584)
+
+def repeat_str(r, s):
+	return s*r
