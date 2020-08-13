@@ -1,5 +1,8 @@
 def longest_repetition(s):
-	letters = [[s[0], 1]]
+	if s:
+		letters = [[s[0], 1]]
+	else:
+		return ('', 0)
 	for i in range(1, len(s)):
 		if s[i] == s[i-1]:
 			letters[-1][0] = s[i]
@@ -10,7 +13,7 @@ def longest_repetition(s):
 	for item in letters:
 		if item[1] > biggest[1]:
 			biggest = item
-	return biggest
+	return tuple(biggest)
 
 print(longest_repetition("aaaabb"), ('a', 4))
 print(longest_repetition("bbbaaabaaaa"), ('a', 4))
