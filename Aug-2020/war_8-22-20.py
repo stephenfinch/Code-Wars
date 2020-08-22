@@ -9,9 +9,7 @@ def solve(s):
 		temp = s[:i]+s[i+1:]
 		if test(temp):
 			return 'remove one'
-	else:
-		return 'no answer'
-
+	return 'not possible'
 
 def test(s):
 	output = True
@@ -21,5 +19,5 @@ def test(s):
 	return output
 
 
-
-print(solve("abba"),"OK")
+def solve(arr):
+	pass
