@@ -1,7 +1,7 @@
-#this is for tomrrow incase i do codewars then... tbh this is kinda just for my github history lol
-#one more commit for fun
-
-
+set_ = 'abcdefghijklmnopqrstuvwxyz'
 
 def missing_alphabets(s):
-	pass
+	s.sort()
+	output, repeat = [], 0
+	for char in set_:
+		if char not in s:
