@@ -14,8 +14,13 @@ def missing_alphabets(s):
 				output.append(temp_letters[i])
 	return ''.join(sorted(output))
 
+#print(missing_alphabets("abbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxy"),"ayzz")
 
-
-
-
-print(missing_alphabets("abbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxy"),"ayzz")
+def divisors(num):
+	output = []
+	for x in range(2, num):
+		if num % x == 0:
+			output.append(x)
+	if output:
+		return output
+	return str(num)+' is prime'
