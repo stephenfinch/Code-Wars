@@ -1,6 +1,5 @@
-alphabet = 'qwertyuiopasdfghjklzxcvbnm'
 def is_pangram(s):
-	for char in alphabet:
-		if s.lower().count(char) == 0:
+	for char in 'qwertyuiopasdfghjklzxcvbnm':
+		if char not in s.lower():
 			return False
 	return True
