@@ -1,3 +1,4 @@
+'''
 def num_of_open_lockers(n):
 	doors = []
 	for i in range(1, n + 1):
@@ -7,6 +8,18 @@ def num_of_open_lockers(n):
 				count += 1
 		doors.append(count % 2 == 0)
 	return doors.count(False)
+'''
+import math
+
+def num_of_open_lockers(n):
+	open_doors = 0
+	for i in range(1, n + 1):
+		if isinstance(math.sqrt(i), int):
+			open_doors += 1
+	return open_doors
+
+
+
 
 
 print(num_of_open_lockers(100))
