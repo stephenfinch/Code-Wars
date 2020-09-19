@@ -1,5 +1,3 @@
-import math
-
 def num_of_open_lockers(n):
 	open_doors = 0
 	for i in range(1, n + 1):
