@@ -1,5 +1,8 @@
 def solution(value):
-	output = '00000'
-	for i in range(len(value), 0, -1):
-		output[i] = value[i]
-	return output
+	output, value = '00000', str(value)
+	for i in range(len(value)):
+		print(value[i])
+		output += value[i]
+	return 'Value is ' + output[len(output)-5:]
+
+print(solution(1204), 'Value is 01204')
