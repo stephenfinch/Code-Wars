@@ -12,3 +12,11 @@ def num_range(n, start, step):
 
 def rand_range(n, mn, mx):
 	return [random.randint(mn, mx) for x in range(n)]
+
+def primes(n):
+	num, nums = 2, []
+	while len(nums) < n:
+		if all(num%i!=0 for i in range(2,num)):
+			nums.append(num)
+		num += 1
+	return nums
