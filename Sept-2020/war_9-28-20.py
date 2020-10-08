@@ -4,5 +4,12 @@ def pairs(a):
 	
 
 
-print(pairs([1,2,5,8,-4,-3,7,6,5]),3)
-print(pairs([21, 20, 22, 40, 39, -56, 30, -55, 95, 94]),2)
+#print(pairs([1,2,5,8,-4,-3,7,6,5]),3)
+#print(pairs([21, 20, 22, 40, 39, -56, 30, -55, 95, 94]),2)
+
+
+
+def square_digits(num):
+	return int(''.join(str(int(x)**2) for x in str(num)))
+
+print(square_digits(9119))
