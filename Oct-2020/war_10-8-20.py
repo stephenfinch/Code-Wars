@@ -1,0 +1,1 @@
+def mirror(data: list) -> list:
