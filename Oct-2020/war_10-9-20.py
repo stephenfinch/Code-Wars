@@ -15,3 +15,10 @@ def persistence(n):
 		n = output
 		print(count, n)
 	return count
+
+def is_in_middle(s):
+	s = s.split('abc')
+	return len(s[0]) == len(s[1]) or len(s[0]) == len(s[1]) - 1
+
+print(is_in_middle("AabcBB"), True)
+print(is_in_middle("AabcBBB"), False)
