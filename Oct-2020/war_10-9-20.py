@@ -23,3 +23,4 @@ def is_in_middle(s):
 
 print(is_in_middle("AabcBB"), True)
 print(is_in_middle("AabcBBB"), False)
+
