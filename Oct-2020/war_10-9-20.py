@@ -5,7 +5,6 @@ def unique_in_order(arr):
 			output.append(arr[i])
 	return output
 
-
 def persistence(n):
 	output, count = 1, 0
 	while len(str(n)) > 1:
@@ -18,7 +17,6 @@ def persistence(n):
 
 def is_in_middle(s):
 	s = s.split('abc')
-	print(s)
 	return len(s[1]) - len(s[0]) < 2
 
 print(is_in_middle("AabcBB"), True)
