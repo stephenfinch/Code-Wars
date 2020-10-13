@@ -8,7 +8,6 @@ def solve(s):
 			count = 0
 	return max(totals)
 
-
 import random
 
 class Card:
