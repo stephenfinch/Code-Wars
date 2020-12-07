@@ -8,8 +8,14 @@ def sum_square_even_root_odd(nums):
 def check_password(s):
 	_len, upper, lower, digit, special = 7<len(s)<21, False, False, False, False
 	for i in set(s):
-		if True:
-			pass
-	return _len
+		if i.isdigit():
+			digit = True
+		elif i in '!@#$%^&*?':
+			special = True
+		elif i.isupper():
+			upper = True
+		elif i.islower():
+			lower = True
+	return 'valid' if all([_len, upper, lower, digit, special]) else 'not valid'
 
-print(check_password('aaaaaaaaggggggggggggg'))
+print(check_password('asdfa4Edfg!aad'))
