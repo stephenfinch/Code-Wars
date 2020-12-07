@@ -6,7 +6,6 @@ def sum_square_even_root_odd(nums):
 
 
 def check_password(s):
-	print(s)
 	_len, upper, lower, digit, special, other = 7<len(s)<21, False, False, False, False, True
 	for i in set(s):
 		if i.isdigit():
