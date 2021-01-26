@@ -14,3 +14,4 @@ def consecutive_sum(num):
 print(consecutive_sum(100))
 
 #this is hard lol jk im just lazy
+#oh that didnt even count as a new day on github
