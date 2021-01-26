@@ -12,3 +12,5 @@ def consecutive_sum(num):
 	return len(output) + 1
 
 print(consecutive_sum(100))
+
+#this is hard lol jk im just lazy
