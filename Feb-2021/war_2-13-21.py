@@ -8,4 +8,4 @@
 # well im just looking for jobs now
 # gonna work on my essay for RMS
 # i get paid to teach python yo
-# it was 20 an hour but now its 15...
+# it was 20 an hour but now its 15...#
