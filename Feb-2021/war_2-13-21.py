@@ -11,3 +11,4 @@
 # it was 20 an hour but now its 15...#
 # i got an interview!!!
 # i gotta learn Ruby lol
+# yay ruby is a lot like python!
