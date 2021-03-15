@@ -12,3 +12,4 @@
 # i got an interview!!!
 # i gotta learn Ruby lol
 # yay ruby is a lot like python!
+# ruby isnt that hard at all!
