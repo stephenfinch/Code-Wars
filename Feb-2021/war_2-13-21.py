@@ -13,3 +13,5 @@
 # i gotta learn Ruby lol
 # yay ruby is a lot like python!
 # ruby isnt that hard at all!
+# i need to do a small project before my interview
+# 
